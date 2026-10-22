@@ -63,7 +63,7 @@ changes, so a model that reports them loses precision. `confidentiality` and `wa
 
 ## Results
 
-The first run is commit `df9ef24` (`results: first Bedrock run (raw + eval + report)`). It used one system prompt,
+The first run is commit [`df9ef24`](https://github.com/ASurzhenko/contract-deltas/commit/df9ef24) (`results: first Bedrock run (raw + eval + report)`). It used one system prompt,
 written before the run and not edited afterwards. The numbers below are copied verbatim from
 [`results/headline.md`](results/headline.md) and a test checks that they match.
 
