@@ -47,7 +47,7 @@ def test_full_run_writes_reports_and_prints_calls_made(stubbed, tmp_path, capsys
     assert "calls made: 12" in out and out.count("called, 1 attempts") == 12
     assert all((tmp_path / name).exists() for name in REPORT_FILES)
     headline = (tmp_path / "headline.md").read_text(encoding="utf-8")
-    assert "F1 1/1 (1.000)" in headline and "rejected_output 0" in headline
+    assert "F1 64/64 (1.000)" in headline and "rejected_output 0" in headline
     assert "Rules on this source versus hand labels" in (tmp_path / "report.md").read_text(encoding="utf-8")
 
 

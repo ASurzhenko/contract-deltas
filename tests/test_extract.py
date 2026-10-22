@@ -303,7 +303,7 @@ def test_runs_log_gains_one_line_per_real_batch_and_none_on_a_hit(stubbed, tmp_p
     lines = [json.loads(line) for line in runs_lines(tmp_path)]
     assert [line["deal_id"] for line in lines] == ["D01", "D02"]
     assert set(lines[0]) == {"deal_id", "model", "system_prompt_sha256", "cache_key", "outcome", "attempts"}
-    assert len(lines[0]["cache_key"]) == 12
+    assert len(lines[0]["cache_key"]) == 16
 
 
 def test_unusable_cache_file_is_ignored_and_recalled(stubbed, tmp_path):

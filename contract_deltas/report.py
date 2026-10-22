@@ -30,6 +30,25 @@ def ratio(numerator: int, denominator: int) -> str:
     return f"{numerator}/{denominator}"
 
 
+def score(numerator: int, denominator: int) -> str:
+    """Unreduced counts next to the decimal, so 32/32 is not shown as 1/1."""
+    if not denominator:
+        return f"{numerator}/{denominator} (n/a)"
+    return f"{numerator}/{denominator} ({numerator / denominator:.3f})"
+
+
+def precision(c: Counts) -> str:
+    return score(c.tp, c.tp + c.fp)
+
+
+def recall(c: Counts) -> str:
+    return score(c.tp, c.tp + c.fn)
+
+
+def f1(c: Counts) -> str:
+    return score(2 * c.tp, 2 * c.tp + c.fp + c.fn)
+
+
 def num(value: Fraction | None) -> str:
     return "n/a" if value is None else f"{float(value):.1f}"
 
@@ -39,8 +58,8 @@ def pp(value: Fraction | None) -> str:
 
 
 def _counts_row(name: str, counts: Counts) -> str:
-    return (f"| {name} | {counts.tp} | {counts.fp} | {counts.fn} | {frac(counts.precision)} | "
-            f"{frac(counts.recall)} | {frac(counts.f1)} |")
+    return (f"| {name} | {counts.tp} | {counts.fp} | {counts.fn} | {precision(counts)} | "
+            f"{recall(counts)} | {f1(counts)} |")
 
 
 def total_usage(extractions: dict[str, Extraction]) -> dict:
@@ -59,10 +78,10 @@ def headline_md(model_id: str, evaluation: Evaluation, extractions: dict[str, Ex
         f"- Model: `{model_id}`",
         f"- Deals: {len(evaluation.deals)} (accepted {evaluation.accepted_deals}, "
         f"rejected_output {evaluation.rejected_deals})",
-        f"- Change detection, match on deal and clause type: precision {frac(primary.precision)}, "
-        f"recall {frac(primary.recall)}, F1 {frac(primary.f1)} "
+        f"- Change detection, match on deal and clause type: precision {precision(primary)}, "
+        f"recall {recall(primary)}, F1 {f1(primary)} "
         f"(TP {primary.tp}, FP {primary.fp}, FN {primary.fn})",
-        f"- Strict, change kind must also match: F1 {frac(strict.f1)} "
+        f"- Strict, change kind must also match: F1 {f1(strict)} "
         f"(TP {strict.tp}, FP {strict.fp}, FN {strict.fn})",
         f"- Direction on matched changes: {ratio(evaluation.direction_correct, evaluation.direction_total)} correct; "
         f"always answering buyer-favorable on the same set: "

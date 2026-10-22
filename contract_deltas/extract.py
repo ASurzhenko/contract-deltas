@@ -224,7 +224,7 @@ def extract_deal(client, deal: Deal, model_id: str, results_dir: Path, refresh: 
     _save(path, key, model_id, outcome, reason, changes, records)
     append_line(Path(results_dir) / "runs.jsonl", json.dumps({
         "deal_id": deal.deal_id, "model": config.slug(model_id),
-        "system_prompt_sha256": prompts.SYSTEM_PROMPT_SHA256, "cache_key": key[:12],
+        "system_prompt_sha256": prompts.SYSTEM_PROMPT_SHA256, "cache_key": key[:16],
         "outcome": outcome, "attempts": len(records)}, sort_keys=True))
     return Extraction(
         deal_id=deal.deal_id, outcome=outcome, reason=reason, changes=changes, attempts=len(records),
