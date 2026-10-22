@@ -23,3 +23,10 @@ def write_text(path: Path, text: str) -> None:
         if os.path.exists(tmp_name):
             os.remove(tmp_name)
         raise
+
+
+def append_line(path: Path, line: str) -> None:
+    """Append one line to a text file (read, add, atomic rewrite), keeping utf-8 and LF."""
+    path = Path(path)
+    existing = read_text(path) if path.exists() else ""
+    write_text(path, existing + line + "\n")
