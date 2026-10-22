@@ -1,0 +1,54 @@
+{
+  "cache_key": "7c22fbb758889268ffd752d83c5e713f5eb6c9b815f382989617fb9806296667",
+  "model_id": "us.anthropic.claude-sonnet-4-6",
+  "system_prompt_sha256": "838395909b74f7eb470f40a0c7556b8f5bb65a9566574a1f915ea7dac44d94e8",
+  "outcome": "accepted",
+  "reason": "",
+  "changes": [
+    {
+      "clause_type": "payment_terms",
+      "change": "modified",
+      "direction": "buyer-favorable",
+      "summary": "Payment period extended from 30 days to 60 days.",
+      "sent_excerpt": "Customer shall pay each invoice within thirty (30) days of the invoice date.",
+      "signed_excerpt": "Customer will pay each invoice within 60 days of the invoice date."
+    }
+  ],
+  "attempts": [
+    {
+      "maxTokens": 2048,
+      "stopReason": "tool_use",
+      "usage": {
+        "inputTokens": 2155,
+        "outputTokens": 120,
+        "totalTokens": 2275
+      },
+      "latencyMs": 1211,
+      "message": {
+        "role": "assistant",
+        "content": [
+          {
+            "toolUse": {
+              "toolUseId": "tooluse_iB4yUk2S9cw5CPD5LEXR5T",
+              "name": "report_changes",
+              "input": {
+                "changes": [
+                  {
+                    "clause_type": "payment_terms",
+                    "change": "modified",
+                    "direction": "buyer-favorable",
+                    "summary": "Payment period extended from 30 days to 60 days.",
+                    "sent_excerpt": "Customer shall pay each invoice within thirty (30) days of the invoice date.",
+                    "signed_excerpt": "Customer will pay each invoice within 60 days of the invoice date."
+                  }
+                ]
+              },
+              "type": "tool_use"
+            }
+          }
+        ]
+      },
+      "validationError": null
+    }
+  ]
+}

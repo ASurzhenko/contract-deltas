@@ -1,0 +1,54 @@
+{
+  "cache_key": "82355567088406e1f50e995c0d92b3f6dc830633cf3cea0ba7b37a543efbc008",
+  "model_id": "us.anthropic.claude-sonnet-4-6",
+  "system_prompt_sha256": "838395909b74f7eb470f40a0c7556b8f5bb65a9566574a1f915ea7dac44d94e8",
+  "outcome": "accepted",
+  "reason": "",
+  "changes": [
+    {
+      "clause_type": "price_discount",
+      "change": "modified",
+      "direction": "buyer-favorable",
+      "summary": "The volume discount was increased from 5% to 10%.",
+      "sent_excerpt": "Provider shall apply a volume discount of 5% to the list price for all committed seats.",
+      "signed_excerpt": "Provider will apply a volume discount of 10% to the list price for all committed seats."
+    }
+  ],
+  "attempts": [
+    {
+      "maxTokens": 2048,
+      "stopReason": "tool_use",
+      "usage": {
+        "inputTokens": 2161,
+        "outputTokens": 127,
+        "totalTokens": 2288
+      },
+      "latencyMs": 1249,
+      "message": {
+        "role": "assistant",
+        "content": [
+          {
+            "toolUse": {
+              "toolUseId": "tooluse_7f95Ve4IM9jGij5QYPxYgq",
+              "name": "report_changes",
+              "input": {
+                "changes": [
+                  {
+                    "clause_type": "price_discount",
+                    "change": "modified",
+                    "direction": "buyer-favorable",
+                    "summary": "The volume discount was increased from 5% to 10%.",
+                    "sent_excerpt": "Provider shall apply a volume discount of 5% to the list price for all committed seats.",
+                    "signed_excerpt": "Provider will apply a volume discount of 10% to the list price for all committed seats."
+                  }
+                ]
+              },
+              "type": "tool_use"
+            }
+          }
+        ]
+      },
+      "validationError": null
+    }
+  ]
+}

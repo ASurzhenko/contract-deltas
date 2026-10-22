@@ -1,0 +1,70 @@
+{
+  "cache_key": "c5c2c473c89901f29d660af509f6783598031bf9a64099718123f65fb2fff996",
+  "model_id": "us.anthropic.claude-sonnet-4-6",
+  "system_prompt_sha256": "838395909b74f7eb470f40a0c7556b8f5bb65a9566574a1f915ea7dac44d94e8",
+  "outcome": "accepted",
+  "reason": "",
+  "changes": [
+    {
+      "clause_type": "payment_terms",
+      "change": "modified",
+      "direction": "buyer-favorable",
+      "summary": "Payment period extended from 30 days to 60 days.",
+      "sent_excerpt": "Customer shall pay each invoice within thirty (30) days of the invoice date.",
+      "signed_excerpt": "Customer will pay each invoice within 60 days of the invoice date."
+    },
+    {
+      "clause_type": "price_discount",
+      "change": "modified",
+      "direction": "buyer-favorable",
+      "summary": "Volume discount increased from 5% to 10%.",
+      "sent_excerpt": "Provider shall apply a volume discount of 5% to the list price for all committed seats.",
+      "signed_excerpt": "Provider will apply a volume discount of 10% to the list price for all committed seats."
+    }
+  ],
+  "attempts": [
+    {
+      "maxTokens": 2048,
+      "stopReason": "tool_use",
+      "usage": {
+        "inputTokens": 2155,
+        "outputTokens": 246,
+        "totalTokens": 2401
+      },
+      "latencyMs": 1690,
+      "message": {
+        "role": "assistant",
+        "content": [
+          {
+            "toolUse": {
+              "toolUseId": "tooluse_zrk03Ki789iPxfkpZxA22r",
+              "name": "report_changes",
+              "input": {
+                "changes": [
+                  {
+                    "clause_type": "payment_terms",
+                    "change": "modified",
+                    "direction": "buyer-favorable",
+                    "summary": "Payment period extended from 30 days to 60 days.",
+                    "sent_excerpt": "Customer shall pay each invoice within thirty (30) days of the invoice date.",
+                    "signed_excerpt": "Customer will pay each invoice within 60 days of the invoice date."
+                  },
+                  {
+                    "clause_type": "price_discount",
+                    "change": "modified",
+                    "direction": "buyer-favorable",
+                    "summary": "Volume discount increased from 5% to 10%.",
+                    "sent_excerpt": "Provider shall apply a volume discount of 5% to the list price for all committed seats.",
+                    "signed_excerpt": "Provider will apply a volume discount of 10% to the list price for all committed seats."
+                  }
+                ]
+              },
+              "type": "tool_use"
+            }
+          }
+        ]
+      },
+      "validationError": null
+    }
+  ]
+}

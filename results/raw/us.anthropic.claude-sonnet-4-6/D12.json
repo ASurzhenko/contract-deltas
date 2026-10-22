@@ -1,0 +1,86 @@
+{
+  "cache_key": "cf66ebf554013f1072590c6bf85030565994a017761996f41701905154c41f5b",
+  "model_id": "us.anthropic.claude-sonnet-4-6",
+  "system_prompt_sha256": "838395909b74f7eb470f40a0c7556b8f5bb65a9566574a1f915ea7dac44d94e8",
+  "outcome": "accepted",
+  "reason": "",
+  "changes": [
+    {
+      "clause_type": "liability_cap",
+      "change": "modified",
+      "direction": "buyer-favorable",
+      "summary": "The liability cap was increased from 1x to 1.5x the fees paid in the preceding twelve months.",
+      "sent_excerpt": "shall not exceed 1x the fees paid by Customer in the twelve (12) months preceding the claim.",
+      "signed_excerpt": "will not exceed 1.5x the fees paid by Customer in the 12 months preceding the claim."
+    },
+    {
+      "clause_type": "sla",
+      "change": "modified",
+      "direction": "seller-favorable",
+      "summary": "The required monthly uptime commitment was reduced from 99.9% to 99.5%.",
+      "sent_excerpt": "Provider shall maintain monthly uptime of 99.9%.",
+      "signed_excerpt": "Provider will maintain monthly uptime of 99.5%."
+    },
+    {
+      "clause_type": "data_processing",
+      "change": "added",
+      "direction": "buyer-favorable",
+      "summary": "A new Data Processing clause was added requiring the Provider to process personal data only on Customer instructions and to sign a data processing addendum.",
+      "sent_excerpt": "",
+      "signed_excerpt": "Provider will process personal data only on documented instructions from Customer and will sign the data processing addendum attached as Exhibit B."
+    }
+  ],
+  "attempts": [
+    {
+      "maxTokens": 2048,
+      "stopReason": "tool_use",
+      "usage": {
+        "inputTokens": 2202,
+        "outputTokens": 376,
+        "totalTokens": 2578
+      },
+      "latencyMs": 2579,
+      "message": {
+        "role": "assistant",
+        "content": [
+          {
+            "toolUse": {
+              "toolUseId": "tooluse_36631OM75x3a9xo9nP1fIH",
+              "name": "report_changes",
+              "input": {
+                "changes": [
+                  {
+                    "clause_type": "liability_cap",
+                    "change": "modified",
+                    "direction": "buyer-favorable",
+                    "summary": "The liability cap was increased from 1x to 1.5x the fees paid in the preceding twelve months.",
+                    "sent_excerpt": "shall not exceed 1x the fees paid by Customer in the twelve (12) months preceding the claim.",
+                    "signed_excerpt": "will not exceed 1.5x the fees paid by Customer in the 12 months preceding the claim."
+                  },
+                  {
+                    "clause_type": "sla",
+                    "change": "modified",
+                    "direction": "seller-favorable",
+                    "summary": "The required monthly uptime commitment was reduced from 99.9% to 99.5%.",
+                    "sent_excerpt": "Provider shall maintain monthly uptime of 99.9%.",
+                    "signed_excerpt": "Provider will maintain monthly uptime of 99.5%."
+                  },
+                  {
+                    "clause_type": "data_processing",
+                    "change": "added",
+                    "direction": "buyer-favorable",
+                    "summary": "A new Data Processing clause was added requiring the Provider to process personal data only on Customer instructions and to sign a data processing addendum.",
+                    "sent_excerpt": "",
+                    "signed_excerpt": "Provider will process personal data only on documented instructions from Customer and will sign the data processing addendum attached as Exhibit B."
+                  }
+                ]
+              },
+              "type": "tool_use"
+            }
+          }
+        ]
+      },
+      "validationError": null
+    }
+  ]
+}

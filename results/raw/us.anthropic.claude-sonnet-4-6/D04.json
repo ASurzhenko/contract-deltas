@@ -1,0 +1,102 @@
+{
+  "cache_key": "432486c29599451acabc6c2f97a2a6c47f44f6ee443ea0c893d09744d6882bfb",
+  "model_id": "us.anthropic.claude-sonnet-4-6",
+  "system_prompt_sha256": "838395909b74f7eb470f40a0c7556b8f5bb65a9566574a1f915ea7dac44d94e8",
+  "outcome": "accepted",
+  "reason": "",
+  "changes": [
+    {
+      "clause_type": "payment_terms",
+      "change": "modified",
+      "direction": "buyer-favorable",
+      "summary": "Payment period extended from 30 days to 45 days.",
+      "sent_excerpt": "Customer shall pay each invoice within thirty (30) days of the invoice date.",
+      "signed_excerpt": "Customer will pay each invoice within 45 days of the invoice date."
+    },
+    {
+      "clause_type": "liability_cap",
+      "change": "modified",
+      "direction": "buyer-favorable",
+      "summary": "Liability cap doubled from 1x to 2x fees paid in the preceding twelve months.",
+      "sent_excerpt": "shall not exceed 1x the fees paid by Customer in the twelve (12) months preceding the claim.",
+      "signed_excerpt": "will not exceed 2x the fees paid by Customer in the 12 months preceding the claim."
+    },
+    {
+      "clause_type": "data_processing",
+      "change": "added",
+      "direction": "buyer-favorable",
+      "summary": "A new Data Processing clause was added requiring the Provider to follow Customer instructions and sign a data processing addendum.",
+      "sent_excerpt": "",
+      "signed_excerpt": "Provider will process personal data only on documented instructions from Customer and will sign the data processing addendum attached as Exhibit B."
+    },
+    {
+      "clause_type": "confidentiality",
+      "change": "removed",
+      "direction": "neutral",
+      "summary": "The Confidentiality clause was moved but its substance is unchanged.",
+      "sent_excerpt": "",
+      "signed_excerpt": ""
+    }
+  ],
+  "attempts": [
+    {
+      "maxTokens": 2048,
+      "stopReason": "tool_use",
+      "usage": {
+        "inputTokens": 2183,
+        "outputTokens": 434,
+        "totalTokens": 2617
+      },
+      "latencyMs": 2930,
+      "message": {
+        "role": "assistant",
+        "content": [
+          {
+            "toolUse": {
+              "toolUseId": "tooluse_sNq4HH8fHCS5S9k2OhT7Cl",
+              "name": "report_changes",
+              "input": {
+                "changes": [
+                  {
+                    "clause_type": "payment_terms",
+                    "change": "modified",
+                    "direction": "buyer-favorable",
+                    "summary": "Payment period extended from 30 days to 45 days.",
+                    "sent_excerpt": "Customer shall pay each invoice within thirty (30) days of the invoice date.",
+                    "signed_excerpt": "Customer will pay each invoice within 45 days of the invoice date."
+                  },
+                  {
+                    "clause_type": "liability_cap",
+                    "change": "modified",
+                    "direction": "buyer-favorable",
+                    "summary": "Liability cap doubled from 1x to 2x fees paid in the preceding twelve months.",
+                    "sent_excerpt": "shall not exceed 1x the fees paid by Customer in the twelve (12) months preceding the claim.",
+                    "signed_excerpt": "will not exceed 2x the fees paid by Customer in the 12 months preceding the claim."
+                  },
+                  {
+                    "clause_type": "data_processing",
+                    "change": "added",
+                    "direction": "buyer-favorable",
+                    "summary": "A new Data Processing clause was added requiring the Provider to follow Customer instructions and sign a data processing addendum.",
+                    "sent_excerpt": "",
+                    "signed_excerpt": "Provider will process personal data only on documented instructions from Customer and will sign the data processing addendum attached as Exhibit B."
+                  },
+                  {
+                    "clause_type": "confidentiality",
+                    "change": "removed",
+                    "direction": "neutral",
+                    "summary": "The Confidentiality clause was moved but its substance is unchanged.",
+                    "sent_excerpt": "",
+                    "signed_excerpt": ""
+                  }
+                ]
+              },
+              "type": "tool_use"
+            }
+          }
+        ]
+      },
+      "validationError": null
+    }
+  ]
+}

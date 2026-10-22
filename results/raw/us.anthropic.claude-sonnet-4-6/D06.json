@@ -1,0 +1,70 @@
+{
+  "cache_key": "f614a2dd260b885166c73037a6e299f1c2241f5a5d38ab67d34d64621554b246",
+  "model_id": "us.anthropic.claude-sonnet-4-6",
+  "system_prompt_sha256": "838395909b74f7eb470f40a0c7556b8f5bb65a9566574a1f915ea7dac44d94e8",
+  "outcome": "accepted",
+  "reason": "",
+  "changes": [
+    {
+      "clause_type": "liability_cap",
+      "change": "modified",
+      "direction": "buyer-favorable",
+      "summary": "The liability cap was doubled from 1x to 2x the fees paid in the preceding twelve months.",
+      "sent_excerpt": "shall not exceed 1x the fees paid by Customer in the twelve (12) months preceding the claim.",
+      "signed_excerpt": "will not exceed 2x the fees paid by Customer in the 12 months preceding the claim."
+    },
+    {
+      "clause_type": "termination",
+      "change": "modified",
+      "direction": "buyer-favorable",
+      "summary": "A new right for the Customer to terminate for convenience on 90 days' written notice was added.",
+      "sent_excerpt": "Neither party may terminate this Agreement for convenience.",
+      "signed_excerpt": "Customer may also terminate this Agreement for convenience on 90 days written notice."
+    }
+  ],
+  "attempts": [
+    {
+      "maxTokens": 2048,
+      "stopReason": "tool_use",
+      "usage": {
+        "inputTokens": 2183,
+        "outputTokens": 261,
+        "totalTokens": 2444
+      },
+      "latencyMs": 2069,
+      "message": {
+        "role": "assistant",
+        "content": [
+          {
+            "toolUse": {
+              "toolUseId": "tooluse_2jR5B702EmNXNLbzgBTpEc",
+              "name": "report_changes",
+              "input": {
+                "changes": [
+                  {
+                    "clause_type": "liability_cap",
+                    "change": "modified",
+                    "direction": "buyer-favorable",
+                    "summary": "The liability cap was doubled from 1x to 2x the fees paid in the preceding twelve months.",
+                    "sent_excerpt": "shall not exceed 1x the fees paid by Customer in the twelve (12) months preceding the claim.",
+                    "signed_excerpt": "will not exceed 2x the fees paid by Customer in the 12 months preceding the claim."
+                  },
+                  {
+                    "clause_type": "termination",
+                    "change": "modified",
+                    "direction": "buyer-favorable",
+                    "summary": "A new right for the Customer to terminate for convenience on 90 days' written notice was added.",
+                    "sent_excerpt": "Neither party may terminate this Agreement for convenience.",
+                    "signed_excerpt": "Customer may also terminate this Agreement for convenience on 90 days written notice."
+                  }
+                ]
+              },
+              "type": "tool_use"
+            }
+          }
+        ]
+      },
+      "validationError": null
+    }
+  ]
+}

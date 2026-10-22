@@ -1,0 +1,86 @@
+{
+  "cache_key": "6b36ccd36033d7de27a49a53b953a1cd93ff79f50363b10102663134443d1f57",
+  "model_id": "us.anthropic.claude-sonnet-4-6",
+  "system_prompt_sha256": "838395909b74f7eb470f40a0c7556b8f5bb65a9566574a1f915ea7dac44d94e8",
+  "outcome": "accepted",
+  "reason": "",
+  "changes": [
+    {
+      "clause_type": "payment_terms",
+      "change": "modified",
+      "direction": "buyer-favorable",
+      "summary": "Payment period extended from 30 days to 60 days after invoice receipt.",
+      "sent_excerpt": "Customer shall pay each invoice within thirty (30) days of receipt of the invoice.",
+      "signed_excerpt": "Customer will pay each invoice within 60 days of receipt of the invoice."
+    },
+    {
+      "clause_type": "liability_cap",
+      "change": "modified",
+      "direction": "buyer-favorable",
+      "summary": "Liability cap doubled from 1x to 2x the fees paid in the preceding 12 months.",
+      "sent_excerpt": "shall not exceed 1x the fees paid by Customer in the twelve (12) months preceding the claim.",
+      "signed_excerpt": "will not exceed 2x the fees paid by Customer in the 12 months preceding the claim."
+    },
+    {
+      "clause_type": "data_processing",
+      "change": "added",
+      "direction": "buyer-favorable",
+      "summary": "A new Data Processing clause was added requiring the Provider to process personal data only on Customer instructions and sign a data processing addendum.",
+      "sent_excerpt": "",
+      "signed_excerpt": "Provider will process personal data only on documented instructions from Customer and will sign the data processing addendum attached as Exhibit B."
+    }
+  ],
+  "attempts": [
+    {
+      "maxTokens": 2048,
+      "stopReason": "tool_use",
+      "usage": {
+        "inputTokens": 2194,
+        "outputTokens": 376,
+        "totalTokens": 2570
+      },
+      "latencyMs": 2662,
+      "message": {
+        "role": "assistant",
+        "content": [
+          {
+            "toolUse": {
+              "toolUseId": "tooluse_m14Mbv4sB18uxf3gpyTU8R",
+              "name": "report_changes",
+              "input": {
+                "changes": [
+                  {
+                    "clause_type": "payment_terms",
+                    "change": "modified",
+                    "direction": "buyer-favorable",
+                    "summary": "Payment period extended from 30 days to 60 days after invoice receipt.",
+                    "sent_excerpt": "Customer shall pay each invoice within thirty (30) days of receipt of the invoice.",
+                    "signed_excerpt": "Customer will pay each invoice within 60 days of receipt of the invoice."
+                  },
+                  {
+                    "clause_type": "liability_cap",
+                    "change": "modified",
+                    "direction": "buyer-favorable",
+                    "summary": "Liability cap doubled from 1x to 2x the fees paid in the preceding 12 months.",
+                    "sent_excerpt": "shall not exceed 1x the fees paid by Customer in the twelve (12) months preceding the claim.",
+                    "signed_excerpt": "will not exceed 2x the fees paid by Customer in the 12 months preceding the claim."
+                  },
+                  {
+                    "clause_type": "data_processing",
+                    "change": "added",
+                    "direction": "buyer-favorable",
+                    "summary": "A new Data Processing clause was added requiring the Provider to process personal data only on Customer instructions and sign a data processing addendum.",
+                    "sent_excerpt": "",
+                    "signed_excerpt": "Provider will process personal data only on documented instructions from Customer and will sign the data processing addendum attached as Exhibit B."
+                  }
+                ]
+              },
+              "type": "tool_use"
+            }
+          }
+        ]
+      },
+      "validationError": null
+    }
+  ]
+}

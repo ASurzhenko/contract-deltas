@@ -1,0 +1,86 @@
+{
+  "cache_key": "a24654ac82959b46eae839d4e6553f14c4248fd5b511afc39a80bfb4b9d2a356",
+  "model_id": "us.anthropic.claude-sonnet-4-6",
+  "system_prompt_sha256": "838395909b74f7eb470f40a0c7556b8f5bb65a9566574a1f915ea7dac44d94e8",
+  "outcome": "accepted",
+  "reason": "",
+  "changes": [
+    {
+      "clause_type": "payment_terms",
+      "change": "modified",
+      "direction": "buyer-favorable",
+      "summary": "Payment period extended from 30 days to 60 days.",
+      "sent_excerpt": "Customer shall pay each invoice within thirty (30) days of the date printed on the invoice.",
+      "signed_excerpt": "Customer will pay each invoice within 60 days of the date printed on the invoice."
+    },
+    {
+      "clause_type": "auto_renewal",
+      "change": "removed",
+      "direction": "buyer-favorable",
+      "summary": "The automatic renewal clause was removed entirely.",
+      "sent_excerpt": "This Agreement shall renew automatically for successive twelve (12) month terms unless either party gives sixty (60) days written notice.",
+      "signed_excerpt": ""
+    },
+    {
+      "clause_type": "sla",
+      "change": "modified",
+      "direction": "buyer-favorable",
+      "summary": "Service credits of 5% of the monthly fee per 0.1% shortfall were added for downtime below the 99.9% uptime threshold.",
+      "sent_excerpt": "No service credits are payable for downtime.",
+      "signed_excerpt": "Customer will receive service credits of 5% of the monthly fee for each 0.1% of shortfall."
+    }
+  ],
+  "attempts": [
+    {
+      "maxTokens": 2048,
+      "stopReason": "tool_use",
+      "usage": {
+        "inputTokens": 2155,
+        "outputTokens": 361,
+        "totalTokens": 2516
+      },
+      "latencyMs": 2416,
+      "message": {
+        "role": "assistant",
+        "content": [
+          {
+            "toolUse": {
+              "toolUseId": "tooluse_1ATr06tQEsDuZ314SOZLYY",
+              "name": "report_changes",
+              "input": {
+                "changes": [
+                  {
+                    "clause_type": "payment_terms",
+                    "change": "modified",
+                    "direction": "buyer-favorable",
+                    "summary": "Payment period extended from 30 days to 60 days.",
+                    "sent_excerpt": "Customer shall pay each invoice within thirty (30) days of the date printed on the invoice.",
+                    "signed_excerpt": "Customer will pay each invoice within 60 days of the date printed on the invoice."
+                  },
+                  {
+                    "clause_type": "auto_renewal",
+                    "change": "removed",
+                    "direction": "buyer-favorable",
+                    "summary": "The automatic renewal clause was removed entirely.",
+                    "sent_excerpt": "This Agreement shall renew automatically for successive twelve (12) month terms unless either party gives sixty (60) days written notice.",
+                    "signed_excerpt": ""
+                  },
+                  {
+                    "clause_type": "sla",
+                    "change": "modified",
+                    "direction": "buyer-favorable",
+                    "summary": "Service credits of 5% of the monthly fee per 0.1% shortfall were added for downtime below the 99.9% uptime threshold.",
+                    "sent_excerpt": "No service credits are payable for downtime.",
+                    "signed_excerpt": "Customer will receive service credits of 5% of the monthly fee for each 0.1% of shortfall."
+                  }
+                ]
+              },
+              "type": "tool_use"
+            }
+          }
+        ]
+      },
+      "validationError": null
+    }
+  ]
+}

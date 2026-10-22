@@ -1,0 +1,8 @@
+- Model: `us.anthropic.claude-sonnet-4-6`
+- Deals: 12 (accepted 12, rejected_output 0)
+- Change detection, match on deal and clause type: precision 32/33 (0.970), recall 32/32 (1.000), F1 64/65 (0.985) (TP 32, FP 1, FN 0)
+- Strict, change kind must also match: F1 64/65 (0.985) (TP 32, FP 1, FN 0)
+- Direction on matched changes: 32/32 correct; always answering buyer-favorable on the same set: 30/32
+- Excerpts found in the documents: 52/56
+- Model calls stored in the raw cache: 12
+- Tokens: input 25942, output 3882, total 29824

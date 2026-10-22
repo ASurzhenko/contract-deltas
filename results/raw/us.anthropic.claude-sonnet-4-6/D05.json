@@ -1,0 +1,86 @@
+{
+  "cache_key": "e3aac7cb78ae4473d6b873b3c1fd60d0bdf7045141455d90e122b015c18351b2",
+  "model_id": "us.anthropic.claude-sonnet-4-6",
+  "system_prompt_sha256": "838395909b74f7eb470f40a0c7556b8f5bb65a9566574a1f915ea7dac44d94e8",
+  "outcome": "accepted",
+  "reason": "",
+  "changes": [
+    {
+      "clause_type": "payment_terms",
+      "change": "modified",
+      "direction": "buyer-favorable",
+      "summary": "Payment period extended from 30 days to 60 days.",
+      "sent_excerpt": "Customer shall pay each invoice within thirty (30) days of receipt",
+      "signed_excerpt": "Customer will pay each invoice within 60 days of receipt"
+    },
+    {
+      "clause_type": "price_discount",
+      "change": "modified",
+      "direction": "buyer-favorable",
+      "summary": "Volume discount increased from 5% to 12%.",
+      "sent_excerpt": "Provider shall apply a volume discount of 5% to the list price",
+      "signed_excerpt": "Provider will apply a volume discount of 12% to the list price"
+    },
+    {
+      "clause_type": "auto_renewal",
+      "change": "removed",
+      "direction": "buyer-favorable",
+      "summary": "Auto-renewal clause removed entirely from the signed agreement.",
+      "sent_excerpt": "This Agreement shall renew automatically for successive twelve (12) month terms unless either party gives sixty (60) days written notice",
+      "signed_excerpt": ""
+    }
+  ],
+  "attempts": [
+    {
+      "maxTokens": 2048,
+      "stopReason": "tool_use",
+      "usage": {
+        "inputTokens": 2131,
+        "outputTokens": 329,
+        "totalTokens": 2460
+      },
+      "latencyMs": 2302,
+      "message": {
+        "role": "assistant",
+        "content": [
+          {
+            "toolUse": {
+              "toolUseId": "tooluse_QB7F9drkQ6hZIwLZv5VqnD",
+              "name": "report_changes",
+              "input": {
+                "changes": [
+                  {
+                    "clause_type": "payment_terms",
+                    "change": "modified",
+                    "direction": "buyer-favorable",
+                    "summary": "Payment period extended from 30 days to 60 days.",
+                    "sent_excerpt": "Customer shall pay each invoice within thirty (30) days of receipt",
+                    "signed_excerpt": "Customer will pay each invoice within 60 days of receipt"
+                  },
+                  {
+                    "clause_type": "price_discount",
+                    "change": "modified",
+                    "direction": "buyer-favorable",
+                    "summary": "Volume discount increased from 5% to 12%.",
+                    "sent_excerpt": "Provider shall apply a volume discount of 5% to the list price",
+                    "signed_excerpt": "Provider will apply a volume discount of 12% to the list price"
+                  },
+                  {
+                    "clause_type": "auto_renewal",
+                    "change": "removed",
+                    "direction": "buyer-favorable",
+                    "summary": "Auto-renewal clause removed entirely from the signed agreement.",
+                    "sent_excerpt": "This Agreement shall renew automatically for successive twelve (12) month terms unless either party gives sixty (60) days written notice",
+                    "signed_excerpt": ""
+                  }
+                ]
+              },
+              "type": "tool_use"
+            }
+          }
+        ]
+      },
+      "validationError": null
+    }
+  ]
+}
