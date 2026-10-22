@@ -1,0 +1,20 @@
+{
+  "deal_id": "D02",
+  "changes": [
+    {
+      "clause_type": "payment_terms",
+      "change": "modified",
+      "direction": "buyer-favorable"
+    },
+    {
+      "clause_type": "liability_cap",
+      "change": "modified",
+      "direction": "buyer-favorable"
+    },
+    {
+      "clause_type": "data_processing",
+      "change": "added",
+      "direction": "buyer-favorable"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "deal_id": "D03",
+  "changes": [
+    {
+      "clause_type": "payment_terms",
+      "change": "modified",
+      "direction": "buyer-favorable"
+    },
+    {
+      "clause_type": "auto_renewal",
+      "change": "removed",
+      "direction": "buyer-favorable"
+    },
+    {
+      "clause_type": "sla",
+      "change": "modified",
+      "direction": "buyer-favorable"
+    }
+  ]
+}

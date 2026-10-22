@@ -1,0 +1,20 @@
+{
+  "deal_id": "D12",
+  "changes": [
+    {
+      "clause_type": "liability_cap",
+      "change": "modified",
+      "direction": "buyer-favorable"
+    },
+    {
+      "clause_type": "sla",
+      "change": "modified",
+      "direction": "seller-favorable"
+    },
+    {
+      "clause_type": "data_processing",
+      "change": "added",
+      "direction": "buyer-favorable"
+    }
+  ]
+}

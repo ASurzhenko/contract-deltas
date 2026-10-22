@@ -1,0 +1,13 @@
+deal_id,customer,outcome,amount_usd,days_to_close
+D01,Harbor Logistics,won,42000,38
+D02,Pine Street Retail,won,96000,71
+D03,Atlas Dental Group,lost,58000,83
+D04,Cobalt Foods,won,120000,66
+D05,Maple Tool & Die,lost,35000,91
+D06,Riverbend Clinics,won,64000,44
+D07,Summit Auto Parts,won,28000,35
+D08,Ironwood Energy,won,138000,79
+D09,Bluewater Shipping,lost,47000,77
+D10,Granite Peak Mining,lost,73000,88
+D11,Oakfield Schools,lost,31000,52
+D12,Silverline Telecom,won,110000,62

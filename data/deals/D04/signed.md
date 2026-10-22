@@ -1,0 +1,51 @@
+# Master Services Agreement
+
+This agreement is made between Lumen Data Ltd. ("Provider") and Cobalt Foods ("Customer").
+
+Effective date: 2026-05-02
+Order value: USD 120,000
+
+## Payment Terms
+
+Customer will pay each invoice within 45 days of the invoice date. Overdue amounts accrue interest at 1% per month.
+
+## Price Discount
+
+Provider will apply a volume discount of 5% to the list price for all committed seats.
+
+## Liability Cap
+
+The total liability of each party under this Agreement will not exceed 2x the fees paid by Customer in the 12 months preceding the claim.
+
+## Auto Renewal
+
+This Agreement will renew automatically for successive 12 month terms unless either party gives 60 days written notice of non-renewal.
+
+## Termination
+
+Either party may terminate this Agreement for a material breach that remains uncured 30 days after written notice. Neither party may terminate this Agreement for convenience.
+
+## Service Levels
+
+Provider will maintain monthly uptime of 99.9%. No service credits are payable for downtime.
+
+## Data Processing
+
+Provider will process personal data only on documented instructions from Customer and will sign the data processing addendum attached as Exhibit B.
+
+## Warranty
+
+Provider warrants that the services will conform to the documentation and will remedy any non-conformity within 90 days of notice.
+
+## Governing Law
+
+This Agreement will be governed by the laws of the State of Delaware.
+
+## Confidentiality
+
+Each party will keep the other party's confidential information secret for 3 years after disclosure.
+
+---
+
+Signed for Provider: Marcus Hale, Senior Account Executive
+Signed for Customer: Jonas Berg, Managing Director

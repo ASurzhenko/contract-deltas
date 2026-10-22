@@ -1,0 +1,15 @@
+{
+  "deal_id": "D06",
+  "changes": [
+    {
+      "clause_type": "liability_cap",
+      "change": "modified",
+      "direction": "buyer-favorable"
+    },
+    {
+      "clause_type": "termination",
+      "change": "modified",
+      "direction": "buyer-favorable"
+    }
+  ]
+}

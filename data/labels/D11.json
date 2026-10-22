@@ -1,0 +1,10 @@
+{
+  "deal_id": "D11",
+  "changes": [
+    {
+      "clause_type": "price_discount",
+      "change": "modified",
+      "direction": "buyer-favorable"
+    }
+  ]
+}

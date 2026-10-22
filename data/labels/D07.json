@@ -1,0 +1,10 @@
+{
+  "deal_id": "D07",
+  "changes": [
+    {
+      "clause_type": "payment_terms",
+      "change": "modified",
+      "direction": "buyer-favorable"
+    }
+  ]
+}

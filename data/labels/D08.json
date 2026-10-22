@@ -1,0 +1,25 @@
+{
+  "deal_id": "D08",
+  "changes": [
+    {
+      "clause_type": "price_discount",
+      "change": "modified",
+      "direction": "buyer-favorable"
+    },
+    {
+      "clause_type": "liability_cap",
+      "change": "modified",
+      "direction": "buyer-favorable"
+    },
+    {
+      "clause_type": "auto_renewal",
+      "change": "removed",
+      "direction": "buyer-favorable"
+    },
+    {
+      "clause_type": "data_processing",
+      "change": "added",
+      "direction": "buyer-favorable"
+    }
+  ]
+}
