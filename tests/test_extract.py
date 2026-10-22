@@ -317,3 +317,32 @@ def test_unusable_cache_file_is_ignored_and_recalled(stubbed, tmp_path):
     result = run(client, deal, tmp_path)
 
     assert not result.from_cache and result.outcome == ACCEPTED
+
+
+@pytest.mark.parametrize("stop", ["end_turn", "stop_sequence"])
+def test_text_stop_reason_with_a_valid_tool_use_block_is_accepted(stubbed, tmp_path, stop):
+    client, stubber = stubbed
+    deal = make_deal()
+    stubber.add_response("converse", tool_response([change_item()], stop=stop), expected(base_messages(deal)))
+
+    result = run(client, deal, tmp_path)
+
+    stubber.assert_no_pending_responses()
+    assert result.outcome == ACCEPTED and result.attempts == 1 and result.changes[0].clause_type == "payment_terms"
+
+
+def test_text_stop_reason_with_an_invalid_tool_use_block_gets_the_tool_result_retry(stubbed, tmp_path):
+    client, stubber = stubbed
+    deal = make_deal()
+    bad = tool_response([change_item(change="deleted")], tool_use_id="tu-end", stop="end_turn")
+    stubber.add_response("converse", bad, expected(base_messages(deal)))
+    retry = base_messages(deal) + [
+        bad["output"]["message"],
+        {"role": "user", "content": [{"toolResult": {"toolUseId": "tu-end", "content": ANY, "status": "error"}}]},
+    ]
+    stubber.add_response("converse", tool_response([change_item()]), expected(retry))
+
+    result = run(client, deal, tmp_path)
+
+    stubber.assert_no_pending_responses()
+    assert result.outcome == ACCEPTED and result.attempts == 2

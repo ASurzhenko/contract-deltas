@@ -99,8 +99,9 @@ How to read them:
 
 Token totals in the block above are summed from the usage stored with every raw response. At a list price of USD 3
 per million input tokens and USD 15 per million output tokens, that is about USD 0.14. If the `us.` inference profile
-is billed at a roughly 10 percent higher regional rate (USD 3.30 and 16.50), it is about USD 0.15. These prices come
-from third-party price listings checked on 2026-10-22, not from the AWS pricing page, so treat them as an estimate.
+is billed at a roughly 10 percent higher regional rate (USD 3.30 and 16.50), it is about USD 0.15. This is an
+estimate from third-party price lists (checked 2026-10-22), not from the AWS pricing page, whose rate table
+could not be read.
 The account ran on credits, so nothing was charged.
 
 ### Reproducibility
